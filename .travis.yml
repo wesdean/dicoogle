@@ -14,17 +14,15 @@ matrix:
     - jdk: oraclejdk8
       env: NODE_VERSION=6 WEBAPP_ONLY=1
     - jdk: oraclejdk8
-      env: NODE_VERSION=lts/*
-    - jdk: oraclejdk8
       env: NODE_VERSION=stable WEBAPP_ONLY=1
+    - jdk: oraclejdk8
+      env: NODE_VERSION=lts/*
     - jdk: openjdk8
       env: NODE_VERSION=lts/*
     - jdk: openjdk10
       env: NODE_VERSION=lts/*
     - jdk: openjdk11
       env: NODE_VERSION=lts/*
-  allow_failures:
-    - jdk: openjdk11
 
 addons:
   apt:
